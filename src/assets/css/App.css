@@ -1,0 +1,25 @@
+
+:root {
+    --normal: white;
+    --background: whitesmoke;
+    --primary: black;
+    --secondary: #035b96;
+    --danger: darkred;
+}
+[data-theme='dark'] {
+    --normal: #202020;
+    --background: black;
+    --primary: white;
+    --secondary: #035b96;
+    --danger: darkred;
+}
+
+.main{
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+.navbar{
+    background-color: var(--normal);
+    color: var(--secondary);
+}
