@@ -1,6 +1,14 @@
 import illustration from '../assets/img/illustration.svg';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import Text from './InputTypes/Text';
+import Url from './InputTypes/Url';
+import Mail from './InputTypes/Mail';
+import Call from './InputTypes/Call';
+import Sms from './InputTypes/Sms';
+import Youtube from './InputTypes/Youtube';
+import Instagram from './InputTypes/Instagram';
+import Twitter from './InputTypes/Twitter';
 
 const QrInpput = () => {
 
@@ -9,44 +17,28 @@ const QrInpput = () => {
     const renderContent = () => {
         switch(category){
             case 'text':
-                return(
-                    <p>{category}</p>
-                );
+                return <Text />;
             case 'url':
-                return(
-                    <p>{category}</p>
-                );
-            case 'location':
-                return(
-                    <p>{category}</p>
-                );
+                return <Url />;
+            case 'e-mail':
+                return <Mail />;
             case 'call':
-                return(
-                    <p>{category}</p>
-                );
+                return <Call />;
             case 'sms':
-                return(
-                    <p>{category}</p>
-                );
+                return <Sms />;
             case 'youtube':
-                return(
-                    <p>{category}</p>
-                );
+                return <Youtube />;
             case 'instagram':
-                return(
-                    <p>{category}</p>
-                );
+                return <Instagram />;
             case 'twitter':
-                return(
-                    <p>{category}</p>
-                );
+                return <Twitter />;
             default:
                 return(
                     <div className='default'>
                         <img src={illustration} alt='illustration' />
                         <h3>Select one of the options above to generate a QRCode in that category 😎😉✨</h3>
                     </div>
-                )
+                );
         }
     }
 

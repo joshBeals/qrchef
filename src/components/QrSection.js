@@ -3,7 +3,7 @@ import QrEditor from './QrEditor';
 
 const QrSection = () => {
     return(
-        <div className='container mt-5'>
+        <div className='container mt-5 pb-5'>
             <div className='row g-0 justify-contnet-center'>
                 <div className='col-md-8 col-sm-12 editor'>
                     <QrEditor />

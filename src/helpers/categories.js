@@ -9,8 +9,8 @@ export const categories = [
         'icon': 'globe'
     },
     {
-        'title': 'location',
-        'icon': 'geo-alt'
+        'title': 'e-mail',
+        'icon': 'envelope'
     },
     {
         'title': 'call',
