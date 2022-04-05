@@ -69,7 +69,7 @@ body{
 }
 
 .option-item{
-    flex: 23%;
+    flex: 18%;
     margin: 5px;
 }
 
@@ -88,12 +88,25 @@ body{
     color: white;
 }
 
+.active{
+    background-color: var(--secondary);
+    color: white;
+}
+
 .option i{
     font-size: 20px;
 }
 
 .option p{
     margin: 0; padding: 0;
+}
+
+.inputList{
+    margin-top: 50px;
+}
+
+.inputList h3{
+    color: var(--secondary);
 }
 
 

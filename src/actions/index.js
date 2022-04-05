@@ -13,3 +13,10 @@ export const changeTheme = (theme) => {
         payload: theme
     };
 }
+
+export const changeCategory = (value) => {
+    return { 
+        type: 'CATEGORY',
+        payload: value
+    };
+}

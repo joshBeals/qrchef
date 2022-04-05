@@ -9,7 +9,7 @@ export const categories = [
         'icon': 'globe'
     },
     {
-        'title': 'geolocation',
+        'title': 'location',
         'icon': 'geo-alt'
     },
     {
