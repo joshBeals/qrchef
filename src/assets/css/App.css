@@ -106,7 +106,21 @@ body{
 }
 
 .inputList h3{
+    margin-top: 20px;
     color: var(--secondary);
+    padding: 0px 30px;
+}
+
+.inputList img{
+    height: 200px;
+}
+
+.default{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 

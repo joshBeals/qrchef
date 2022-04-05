@@ -10,7 +10,7 @@ const QrOptions = () => {
 
     const renderOptions = categories.map(({ title, icon }) => {
         return(
-            <div key={title} className='option-item' data-toggle="tooltip" data-placement="bottom" title={`Generates QR Code that contains ${title.toUpperCase()}`}>
+            <div key={title} className='option-item' data-toggle="tooltip" data-placement="bottom" title={`Generates QR Code that contains ${title.toUpperCase()} data`}>
                 <div className={`option ${category == title && 'active'}`} onClick={() => dispatch(changeCategory(title))}>
                     <i className={`bi bi-${icon}`}></i>
                     <p>{title.charAt(0).toUpperCase() + title.substr(1).toLowerCase()}</p>

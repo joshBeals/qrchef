@@ -1,3 +1,4 @@
+import illustration from '../assets/img/illustration.svg';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -41,7 +42,10 @@ const QrInpput = () => {
                 );
             default:
                 return(
-                    <h3 className='p-2 text-center'>Select one of the options above to generate a QRCode in that category 😎😉✨</h3>
+                    <div className='default'>
+                        <img src={illustration} alt='illustration' />
+                        <h3>Select one of the options above to generate a QRCode in that category 😎😉✨</h3>
+                    </div>
                 )
         }
     }
