@@ -5,6 +5,8 @@
     --primary: black;
     --secondary: #035b96;
     --danger: darkred;
+    --abstract: #e8eef2;
+    --logo: #035b96;
 }
 [data-theme='dark'] {
     --normal: #202020;
@@ -12,6 +14,12 @@
     --primary: white;
     --secondary: #035b96;
     --danger: darkred;
+    --abstract: #181818;
+    --logo: white;
+}
+
+body{
+    /* pointer-events: none; */
 }
 
 .main{
@@ -30,7 +38,7 @@
 }
 
 .navbar span{
-    color: var(--secondary);
+    color: var(--logo);
     margin-left: 10px;
     font-weight: bolder;
     font-size: 24px;
@@ -38,4 +46,67 @@
 
 .toogle-btn{
     background-color: var(--secondary);
+}
+
+.editor{
+    background-color: var(--abstract);
+    color: var(--primary);
+    border-radius: 10px 0px 0px 10px;
+    padding: 50px;
+}
+
+.generator{
+    background-color: var(--normal);
+    color: var(--primary);
+    border-radius: 0px 10px 10px 0px;
+    padding: 50px;
+}
+
+.main-option{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.option-item{
+    flex: 23%;
+    margin: 5px;
+}
+
+.option{
+    background-color: white;
+    color: var(--secondary);
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 0px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.option:hover{
+    background-color: var(--secondary);
+    color: white;
+}
+
+.option i{
+    font-size: 20px;
+}
+
+.option p{
+    margin: 0; padding: 0;
+}
+
+
+@media screen and (max-width: 768px){
+    .editor{
+        border-radius: 10px 10px 0px 0px;
+        padding: 10px;
+    }
+    
+    .generator{
+        background-color: var(--normal);
+        color: var(--primary);
+        border-radius: 0px 0px 10px 10px;
+        padding: 10px;
+    }
 }

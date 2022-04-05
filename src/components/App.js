@@ -4,6 +4,7 @@ import Header from './Header';
 import { useDispatch, useSelector } from 'react-redux';
 import { initialTheme } from '../actions';
 import useLocalStorage from 'use-local-storage';
+import QrSection from './QrSection';
 
 const App = () => {
     
@@ -21,9 +22,7 @@ const App = () => {
     return(
         <div className="main" data-theme={themeData}>
             <Header />
-            <div>
-                
-            </div>
+            <QrSection />
         </div>
     );
 }

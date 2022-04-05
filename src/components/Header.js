@@ -27,7 +27,7 @@ const Header = () => {
                     <span>QR Chef</span>
                 </a>
                 <div className='d-flex'>
-                    <button className='btn toogle-btn' onClick={() => switchTheme()} data-bs-toggle="tooltip" data-bs-placement="bottom" title="Toogle dark mode">
+                    <button className='btn toogle-btn' onClick={() => switchTheme()} data-toggle="tooltip" data-placement="bottom" title="Toogle dark mode">
                         {themeData == 'light' ? <img src={dark} alt='dark' /> : <img src={light} alt='light' />}
                     </button>
                 </div>
