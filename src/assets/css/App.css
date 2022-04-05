@@ -15,6 +15,7 @@
 }
 
 .main{
+    font-family: 'Monda', sans-serif;
     background-color: var(--background);
     min-height: 100vh;
 }
@@ -22,4 +23,19 @@
 .navbar{
     background-color: var(--normal);
     color: var(--secondary);
+}
+
+.navbar img{
+    height: 50px;
+}
+
+.navbar span{
+    color: var(--secondary);
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.toogle-btn{
+    background-color: var(--secondary);
 }
