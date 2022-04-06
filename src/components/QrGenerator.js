@@ -37,6 +37,10 @@ const QrGenerator = () => {
             ></ToastContainer>
             <div className='qr-main'>
                 <QRCode bgColor='white' fgColor='black' size={200} title='QR Chef' value={qr} />
+                <div className='mt-5'>
+                    <label className="form-label">Color picker</label>
+                    <input type="color" className="form-control form-control-color" value="#563d7c" title="Choose your color" />
+                </div>
             </div>
         </div>
     );
