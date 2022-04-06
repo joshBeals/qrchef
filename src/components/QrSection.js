@@ -1,5 +1,6 @@
 import React from 'react';
 import QrEditor from './QrEditor';
+import QrGenerator from './QrGenerator';
 
 const QrSection = () => {
     return(
@@ -9,7 +10,7 @@ const QrSection = () => {
                     <QrEditor />
                 </div>
                 <div className='col-md-4 col-sm-12 generator'>
-                    
+                    <QrGenerator />
                 </div>
             </div>
         </div>

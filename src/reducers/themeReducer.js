@@ -1,5 +1,5 @@
 
-export default (state = [], action) => {
+export default (state = '', action) => {
     switch(action.type){
         case 'SET_THEME':
             return action.payload;

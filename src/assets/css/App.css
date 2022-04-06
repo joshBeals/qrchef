@@ -137,6 +137,11 @@ form{
     color: var(--primary);
 }
 
+.qr-main{
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes show{
     0%{
         opacity: 0;
