@@ -144,6 +144,19 @@ form{
     flex-direction: column;
 }
 
+.colorPicker {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.colorPicker .form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 @keyframes show{
     0%{
         opacity: 0;
@@ -156,14 +169,14 @@ form{
 @media screen and (max-width: 768px){
     .editor{
         border-radius: 10px 10px 0px 0px;
-        padding: 10px;
+        padding: 20px 10px;
     }
     
     .generator{
         background-color: var(--normal);
         color: var(--primary);
         border-radius: 0px 0px 10px 10px;
-        padding: 10px;
+        padding: 20px 10px;
     }
 
     .inputList h3{

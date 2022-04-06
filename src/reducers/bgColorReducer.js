@@ -1,7 +1,7 @@
 
-export default (state = 'QR Chef', action) => {
+export default (state = '#ffffff', action) => {
     switch(action.type){
-        case 'SET_QR':
+        case 'BG_COLOR':
             return action.payload;
         default:
             return state;

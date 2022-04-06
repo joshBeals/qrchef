@@ -27,3 +27,17 @@ export const setQR = (value) => {
         payload: value
     };
 }
+
+export const changeBG = (value) => {
+    return { 
+        type: 'BG_COLOR',
+        payload: value
+    };
+}
+
+export const changeFG = (value) => {
+    return { 
+        type: 'FG_COLOR',
+        payload: value
+    };
+}
