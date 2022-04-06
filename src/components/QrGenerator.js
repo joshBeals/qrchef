@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import QRCode from 'react-qr-code';
+// import QRCode from 'react-qr-code';
+import { QRCodeCanvas } from 'qrcode.react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { changeBG, changeFG } from '../actions';
@@ -26,6 +27,19 @@ const QrGenerator = () => {
         }
     }, [qr]);
 
+    const downloadQR = () => {
+        const canvas = document.querySelector("#qrchef");
+        const pngUrl = canvas
+          .toDataURL("image/png")
+          .replace("image/png", "image/octet-stream");
+        let downloadLink = document.createElement("a");
+        downloadLink.href = pngUrl;
+        downloadLink.download = "qrchef.png";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    };
+
     return(
         <div>
             <ToastContainer
@@ -40,7 +54,7 @@ const QrGenerator = () => {
                 pauseOnHover
             ></ToastContainer>
             <div className='qr-main'>
-                <QRCode bgColor={bgColor} fgColor={fgColor} size={200} title='QR Chef' value={qr} />
+                <QRCodeCanvas id='qrchef' bgColor={bgColor} fgColor={fgColor} size={200} title='QR Chef' value={qr} />
                 <div className='mt-5 colorPicker'>
                     <div className='form-group'>
                         <label className="form-label">FgColor</label>
@@ -51,6 +65,8 @@ const QrGenerator = () => {
                         <input type="color" className="form-control form-control-color" onChange={e => dispatch(changeBG(e.target.value))} value={bgColor} title="Choose your color" />
                     </div>
                 </div>
+                <button onClick={() => downloadQR()} className='btn generate-btn mt-5'>Download QRCode</button>
+                <p className='text-center mt-3'>Tip: Light backgrounds are recommended</p>
             </div>
         </div>
     );
