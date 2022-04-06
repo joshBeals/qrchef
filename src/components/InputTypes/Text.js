@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { setQR } from '../../actions';
 
 const Text = () => {
 
     const [text, setText] = useState('');
+    const dispatch = useDispatch();
+
+    const submitForm = (e) => {
+        e.preventDefault();
+        dispatch(setQR(text));
+    }
 
     return(
-        <form>
+        <form onSubmit={submitForm}>
             <h4 className='mb-5'>Text Based QRCode</h4>
             <div className='form-group'>
                 <label className='mb-3'>Enter Text Here</label>

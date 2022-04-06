@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { setQR } from '../../actions';
 
 const Instagram = () => {
     
     const [text, setText] = useState('');
+    const dispatch = useDispatch();
+
+    const submitForm = (e) => {
+        e.preventDefault();
+        dispatch(setQR('https://instagram.com/' + text));
+    }
 
     return(
-        <form>
+        <form onSubmit={submitForm}>
             <h4 className='mb-5'>Instagram Based QRCode</h4>
             <div className='form-group'>
                 <label className='mb-3'>Enter Username Here</label>

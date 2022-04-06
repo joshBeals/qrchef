@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { setQR } from '../../actions';
 
 const Mail = () => {
 
     const [to, setTo] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+    const dispatch = useDispatch();
+
+    const submitForm = (e) => {
+        e.preventDefault();
+        dispatch(setQR(`MATMSG:TO:${to};SUB:${subject};BODY:${message};;`));
+    }
 
     return(
-        <form>
+        <form onSubmit={submitForm}>
             <h4 className='mb-5'>E-Mail Based QRCode</h4>
             <div className='form-group'>
                 <label className='mb-3'>To Email</label>

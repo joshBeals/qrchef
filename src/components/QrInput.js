@@ -35,7 +35,7 @@ const QrInpput = () => {
             default:
                 return(
                     <div className='default'>
-                        <img src={illustration} alt='illustration' />
+                        {/* <img src={illustration} alt='illustration' /> */}
                         <h3>Select one of the options above to generate a QRCode in that category 😎😉✨</h3>
                     </div>
                 );

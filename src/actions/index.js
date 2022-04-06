@@ -20,3 +20,10 @@ export const changeCategory = (value) => {
         payload: value
     };
 }
+
+export const setQR = (value) => {
+    return { 
+        type: 'SET_QR',
+        payload: value
+    };
+}
