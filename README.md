@@ -2,6 +2,9 @@
 
 This is a website that allows you to create dynamic and customizabe QRCodes.
 
+![plot](./public/blob/light.png)
+![plot](./public/blob/dark.png)
+
 ## Main Features
 
 <ul>
