@@ -11,5 +11,14 @@ This is a website that allows you to create dynamic and customizabe QRCodes.
   <li>Light and Dark Mode</li>
 </ul>
 
+## Tools
+
+<ul>
+  <li>React</li>
+  <li>Redux</li>
+  <li>React Hooks (useState, useEffect, useSelector, useDispatch, useLocalStorage)</li>
+  <li>Bootstrap</li>
+</ul>
+
 
 [The live site is available here](https://qrchef.netlify.app/).
