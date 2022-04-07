@@ -3,8 +3,8 @@
 This is a website that allows you to create dynamic and customizabe QRCodes.
 
 <div>
-  <img src="./public/blob/light.png" height="100" />
-  <img src="./public/blob/dark.png" height="100" />
+  <img src="./public/blob/light.png" height="200" />
+  <img src="./public/blob/dark.png" height="200" />
 </div>
 
 ## Main Features
